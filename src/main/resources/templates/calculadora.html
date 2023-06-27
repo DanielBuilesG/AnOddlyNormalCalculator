@@ -10,7 +10,7 @@
     
     <form action="add">
         
-        <p th:value="${currval}" />
+        <p th:text="'resultado, ' + ${currval}" />
         
         <input type="text" name="number" th:value="${currval}">
         
