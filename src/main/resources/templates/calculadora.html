@@ -5,13 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <p th:text="'Hello, ' + ${name} + '!'" />
+    
     
     
     <form action="add">
         
-        <input type="text" name="number" value="">
+        <input type="text" name="number" th:value="${currval}">
         <input type="submit" value="+">
+        <input type="submit" value="x" formaction="multi">
+        <input type="submit" value="-" formaction="substract">
+        <input type="submit" value="/" formaction="divide">
+        
     </form>
     
     
