@@ -10,11 +10,16 @@
     
     <form action="add">
         
+        <p th:value="${currval}" />
+        
         <input type="text" name="number" th:value="${currval}">
+        
         <input type="submit" value="+">
         <input type="submit" value="x" formaction="multi">
         <input type="submit" value="-" formaction="substract">
         <input type="submit" value="/" formaction="divide">
+        
+        <output type="text" name="output" th:value="${currval}" ></output>
         
     </form>
     

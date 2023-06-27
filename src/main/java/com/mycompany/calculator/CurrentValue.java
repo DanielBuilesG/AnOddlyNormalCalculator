@@ -4,21 +4,21 @@
  */
 package com.mycompany.calculator;
 
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
+
 /**
  *
  * @author daniel.builes
  */
+
+@Component
+@SessionScope
 public class CurrentValue {
 
-    private static CurrentValue currentVal = new CurrentValue();
     private double currentval =0;
-    
-    
-    private CurrentValue(){}
-    
-    public static CurrentValue getInstance(){
-        return currentVal;
-    }
+
+    public CurrentValue(){}
     
     public double getCurrentValue(){
         return currentval;
