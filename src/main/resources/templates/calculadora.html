@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Calculadora</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    
+    
+    <form action="add">
+        
+        <input type="text" name="number" value="">
+        <input type="submit" value="+">
+    </form>
+    
+    
+</body>
+</html>
